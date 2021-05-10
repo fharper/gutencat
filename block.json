@@ -1,0 +1,15 @@
+{
+	"apiVersion": "2",
+	"name": "dev-fred-gutencat/gutencat",
+	"title": "Gutencat",
+	"category": "media",
+	"icon": "nametag",
+	"description": "The block that Gutenberg was missing to really take off",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutencat",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
