@@ -5,18 +5,23 @@
 	"author": "Frédéric Harper",
 	"license": "Unlicense",
 	"main": "build/index.js",
+	"watch": {
+		"build": "src/*.js"
+	},
 	"scripts": {
 		"build": "wp-scripts build",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"start": "wp-scripts start",
-		"packages-update": "wp-scripts packages-update"
+		"packages-update": "wp-scripts packages-update",
+		"watch": "npm-watch"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^5.3.3",
 		"@wordpress/blocks": "^8.0.3",
-		"@wordpress/i18n": "^3.20.0"
+		"@wordpress/i18n": "^3.20.0",
+		"npm-watch": "^0.9.0"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^15.0.1"
