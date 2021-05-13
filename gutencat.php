@@ -77,3 +77,14 @@ function register_settings() {
     add_settings_field('gutencat_catapi_key', 'TheCatApi Key', 'setting_api_key', 'options-gutencat', 'catapi_settings', ['gutencat_catapi_key']);
 }
 add_action('admin_init', 'register_settings');
+
+//Add a setting link in the plugins page
+
+
+function plugins_setting_links($actions)
+{
+    $links[] = '<a href="' . get_admin_url() . 'options-general.php?page=options-gutencat">Settings</a>';
+
+    return array_merge($actions, $links);
+}
+add_filter('plugin_action_links_' . plugin_basename( __FILE__ ), 'plugins_setting_links');
