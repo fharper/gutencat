@@ -3,7 +3,7 @@
 	"name": "dev-fred-gutencat/gutencat",
 	"title": "Gutencat",
 	"category": "media",
-	"icon": "nametag",
+	"icon": "heart",
 	"description": "The block that Gutenberg was missing to really take off",
 	"supports": {
 		"html": false
