@@ -1,4 +1,7 @@
 {
+    "globals": {
+        "MyGlobal": true
+    },
 	"rules": {
 		"indentation": 4
 	}
