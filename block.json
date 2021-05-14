@@ -8,6 +8,7 @@
 	"supports": {
 		"html": false
 	},
+	"keywords": "image, cat, random",
 	"textdomain": "gutencat",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
