@@ -1,3 +1,5 @@
+![a black cat sitting](img/logo.svg)
+
 # Gutencat
 Who doesn't love cats? It's why I created this WordPress Gutenberg block that displays a random cat image.
 
