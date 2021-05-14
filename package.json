@@ -16,7 +16,7 @@
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
-		"start": "wp-scripts start",
+		"start": "wp-scripts start --xdebug=profile,trace,debug",
 		"packages-update": "wp-scripts packages-update",
 		"watch": "npm-watch"
 	},
