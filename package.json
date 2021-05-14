@@ -6,7 +6,10 @@
 	"license": "Unlicense",
 	"main": "build/index.js",
 	"watch": {
-		"build": "src/*.js"
+		"build": {
+			"patterns": ["src"],
+			"extensions": "js, scss, svg, png, jpg, jpeg"
+		}
 	},
 	"scripts": {
 		"build": "wp-scripts build",
