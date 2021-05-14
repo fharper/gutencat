@@ -1,3 +1,4 @@
+'use strict';
 import { registerBlockType } from '@wordpress/blocks';
 import './css/style.scss';
 import {
