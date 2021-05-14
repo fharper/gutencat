@@ -21,3 +21,10 @@ Have an amazing catsperience!
 - Follow the [WordPress Development Environment Setup tutorial](https://developer.wordpress.org/block-editor/handbook/tutorials/devenv/).
 
 *Note that if you want to use XDebug with `wp-env`, you need to start the developer site with `--xdebug` (add `--update` if you already built the image)*
+
+## What's next
+I have some other things I want to implement.
+- Specify the cat's breed.
+- Specify TheCatAPI's category (i.e.: a cat in a sink).
+- Search the file type.
+- Add a static picture setting: instead of having a random cat picture each time the page containing the block is loaded, the WordPress administrator could check this option when adding a box. It will fetch a random image that will be saved with the block. Obviously, the user will be able to refresh the image until they get what they want.
