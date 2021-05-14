@@ -9,6 +9,7 @@ import catImage, { ReactComponent as JPG } from './img/cat-example.jpg';
 import { Placeholder, Icon } from '@wordpress/components';
 import { more } from '@wordpress/icons';
 
+//? Gotta have a better way to do this with a file, but for whatever reasons, I wasn't able for an Icon component.
 const logo = () => (
     <Icon
         icon={
@@ -45,7 +46,9 @@ registerBlockType( 'dev-fred-gutencat/gutencat', {
 		else {
 			return (
 				<div { ...blockProps() }>
-					<Placeholder icon={logo} label="Placeholder" ></Placeholder>
+					<Placeholder icon={logo} label="Gutencat" >
+						<p>The image will be displayed on the live or preview of the page or post.</p>
+					</Placeholder>
 				</div>
 			);
 		}
