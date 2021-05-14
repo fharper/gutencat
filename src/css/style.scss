@@ -1,0 +1,13 @@
+.components-placeholder {
+	max-width: var(--responsive--aligndefault-width);
+	margin-top: var(--global--spacing-vertical) !important;
+    margin-bottom: var(--global--spacing-vertical) !important;
+	margin-left: auto !important;
+    margin-right: auto !important;
+}
+svg {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 24px;
+    max-height: 24px;
+}
