@@ -3,7 +3,7 @@
 	"name": "dev-fred-gutencat/gutencat",
 	"title": "Gutencat",
 	"category": "media",
-	"description": "The block that Gutenberg was missing to really take off",
+	"description": "Gutencat will display a random cat images",
 	"supports": {
 		"html": false
 	},
