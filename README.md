@@ -25,13 +25,13 @@ Have an amazing catsperience!
 *Note that if you want to use XDebug with `wp-env`, you need to start the developer site with `--xdebug` (add `--update` if you already built the image)*
 
 ### Linting
-####CSS
+#### CSS
 `npm run lint:css`
 
-####JavaScript / React
+#### JavaScript / React
 `npm run lint:js`
 
-####PHP
+#### PHP
 Foolw the WordPress Coding Standards [installation instructions](https://github.com/WordPress/WordPress-Coding-Standards#installation). Once it's done, run the following command
 `phpcs gutencat.php`
 
