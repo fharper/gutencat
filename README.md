@@ -24,6 +24,13 @@ Have an amazing catsperience!
 
 *Note that if you want to use XDebug with `wp-env`, you need to start the developer site with `--xdebug` (add `--update` if you already built the image)*
 
+### Linting
+CSS
+`npm run lint:css`
+
+JavaScript / React
+`npm run lint:js`
+
 ## What's next
 I have some other things I want to implement.
 - Specify the cat's breed.
