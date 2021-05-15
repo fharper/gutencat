@@ -1,9 +1,0 @@
-{
-    "root": true,
-	"extends": [
-		"/Users/fharper/.eslintrc.json"
-	],
-	"rules": {
-		"indent": ["error", 4]
-	}
-}
