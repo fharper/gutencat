@@ -11,27 +11,30 @@ import logo from './logo';
  *
  * @return {WPElement} Element to render
  */
-export default function Edit(props) {
-    let element = null;
+export default function Edit( props ) {
+	let element = null;
 
-    if (props.attributes.isPreview) {
-        element = (
-            <div>
-                <img src={`/wp-content/plugins/gutencat/build/${catImage}`}
-                    alt="a black cat" />
-            </div>
-        );
-    }
-    else {
-        element = (
-            <div { ...blockProps() }>
-                <Placeholder icon={logo()} label="Gutencat" >
-                    <p>The image will be displayed on the live or preview of
-                         the page or post.</p>
-                </Placeholder>
-            </div>
-        );
-    }
+	if ( props.attributes.isPreview ) {
+		element = (
+			<div>
+				<img
+					src={ `/wp-content/plugins/gutencat/build/${ catImage }` }
+					alt="a black cat"
+				/>
+			</div>
+		);
+	} else {
+		element = (
+			<div { ...blockProps() }>
+				<Placeholder icon={ logo() } label="Gutencat">
+					<p>
+						The image will be displayed on the live or preview of
+						the page or post.
+					</p>
+				</Placeholder>
+			</div>
+		);
+	}
 
-    return element;
+	return element;
 }

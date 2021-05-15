@@ -7,17 +7,14 @@ import { registerBlockType } from '@wordpress/blocks';
 /**
  * Only define the edit since it's a dynamic block
  */
-registerBlockType(
-    'dev-fred-gutencat/gutencat',
-    {
-        "edit": Edit,
-        "example": {
-            "attributes": {
-                "isPreview": true
-            }
-        },
-        "icon": Logo,
-        "name": "dev-fred-gutencat/gutencat",
-        "save": Save
-    }
-);
+registerBlockType( 'dev-fred-gutencat/gutencat', {
+	edit: Edit,
+	example: {
+		attributes: {
+			isPreview: true,
+		},
+	},
+	icon: Logo,
+	name: 'dev-fred-gutencat/gutencat',
+	save: Save,
+} );
