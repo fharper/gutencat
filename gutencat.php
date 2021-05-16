@@ -13,6 +13,8 @@
  * @package           dev-fred-gutencat
  */
 
+$plugin_options = 'gutencat_options';
+
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
  */
@@ -45,8 +47,10 @@ function show_settings_page() {
 
 	<form action="options.php" method="post">
 		<?php
-			settings_fields( 'dev_fred_gutencat_options' );
-			do_settings_sections( 'options-gutencat' );
+			global $plugin_options;
+
+			settings_fields( 'dev_fred_' . $plugin_options );
+			do_settings_sections( $plugin_options );
 		?>
 
 		<input name="submit" type="submit" role="button" aria-pressed="false" value="Save"/>
@@ -58,10 +62,11 @@ function show_settings_page() {
  * Render the API field
  */
 function setting_api_key() {
-		$options = get_option( 'gutencat_options', '' );
+		global $plugin_options;
+		$options = get_option( $plugin_options, '' );
 	?>
 
-	<input id='gutencat_catapi_key' name='gutencat_options' type='password' value='<?php echo esc_attr( $options ); ?>' required />
+	<input id='gutencat_catapi_key' name='<?php echo esc_attr( $plugin_options ); ?>' type='password' value='<?php echo esc_attr( $options ); ?>' required />
 	<p class="description">
 		You need to <a href="https://thecatapi.com/signup" role="link">create a Cat API account</a> to get your API Key (free for you to use on your non-monetized app)
 	</p>
@@ -92,12 +97,13 @@ function options_validate( $input ) {
  * Register the settings so we can load, save and use them
  */
 function register_settings() {
+	global $plugin_options;
 
-	register_setting( 'dev_fred_gutencat_options', 'gutencat_options' );
+	register_setting( 'dev_fred_' . $plugin_options, $plugin_options );
 
-	add_settings_section( 'catapi_settings', 'TheCatApi Settings', 'settings_section', 'options-gutencat' );
+	add_settings_section( 'catapi_settings', 'TheCatApi Settings', 'settings_section', $plugin_options );
 
-	add_settings_field( 'gutencat_catapi_key', 'TheCatApi Key', 'setting_api_key', 'options-gutencat', 'catapi_settings', array( 'gutencat_catapi_key' ) );
+	add_settings_field( 'gutencat_catapi_key', 'TheCatApi Key', 'setting_api_key', $plugin_options, 'catapi_settings', array( 'gutencat_catapi_key' ) );
 }
 add_action( 'admin_init', 'register_settings' );
 
@@ -117,13 +123,14 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'add_menu_link
  * Render the Block
  */
 function render_dynamic_block() {
+	global $plugin_options;
 	$image_url = '';
 
 	$response = wp_remote_get(
 		'https://api.thecatapi.com/v1/images/search',
 		array(
 			'headers' => array(
-				'x-api-key' => get_option( 'gutencat_options', '' ),
+				'x-api-key' => get_option( $plugin_options, '' ),
 			),
 		)
 	);
@@ -141,3 +148,18 @@ function render_dynamic_block() {
 		</p>'
 	);
 }
+
+/**
+ * Things to process when the plugin is uninstalled
+ */
+function uninstall_gutencat_plugin() {
+	global $plugin_options;
+
+	// if uninstall.php is not called by WordPress, die.
+	if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
+		die;
+	}
+
+	delete_option( $plugin_options );
+}
+register_uninstall_hook( __FILE__, 'uninstall_gutencat_plugin' );
