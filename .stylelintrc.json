@@ -1,8 +1,6 @@
 {
-    "globals": {
-        "MyGlobal": true
-    },
-	"rules": {
-		"indentation": 4
-	}
+	"extends": [
+		"stylelint-config-wordpress/scss",
+		"stylelint-config-wordpress"
+	]
 }

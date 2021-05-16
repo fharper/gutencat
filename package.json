@@ -18,19 +18,24 @@
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
-		"start": "wp-scripts start --xdebug=profile,trace,debug",
+		"start": "wp-scripts start --xdebug=debug",
 		"packages-update": "wp-scripts packages-update",
-		"watch": "npm-watch"
+		"watch": "npm-watch",
+		"test:e2e": "wp-scripts test-e2e --wordpress-base-url=http://localhost:8888 --wordpress-username=admin --wordpress-password=password --puppeteer-devtools"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^5.3.3",
 		"@wordpress/blocks": "^8.0.3",
 		"@wordpress/components": "^13.0.3",
-		"@wordpress/eslint-plugin": "^9.0.5",
 		"@wordpress/i18n": "^3.20.0",
-		"npm-watch": "^0.9.0"
+		"npm-watch": "^0.9.0",
+		"puppeteer": "^9.1.1"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^15.0.1"
+		"@wordpress/e2e-test-utils": "^5.1.4",
+		"@wordpress/e2e-tests": "^2.1.6",
+		"@wordpress/eslint-plugin": "^9.0.5",
+		"@wordpress/scripts": "^15.0.1",
+		"stylelint-config-wordpress": "^17.0.0"
 	}
 }
