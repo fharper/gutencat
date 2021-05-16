@@ -21,7 +21,8 @@
 		"start": "wp-scripts start --xdebug=debug",
 		"packages-update": "wp-scripts packages-update",
 		"watch": "npm-watch",
-		"test:e2e": "wp-scripts test-e2e --wordpress-base-url=http://localhost:8888 --wordpress-username=admin --wordpress-password=password --puppeteer-devtools"
+		"test:e2e": "wp-scripts test-e2e --wordpress-base-url=http://localhost:8888 --wordpress-username=admin --wordpress-password=password --puppeteer-devtools",
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^5.3.3",

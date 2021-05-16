@@ -40,15 +40,19 @@ and to ensure your files are up to date on the container.
 You can now open [http://localhost:8888/wp-admin/](http://localhost:8888/wp-admin/). The username is `admin` and the password.... drumrolll... ` password`.
 
 ### Linting
-#### CSS
-`npm run lint:css`
 
 #### JavaScript / React
 `npm run lint:js`
 
+#### CSS
+`npm run lint:css`
+
 #### PHP
 Follow the WordPress Coding Standards [installation instructions](https://github.com/WordPress/WordPress-Coding-Standards#installation).
 `phpcs gutencat.php`
+
+##### Package.json
+`npm run lint:pkg-json`
 
 ### Testing
 #### End-to-end (E2E)
