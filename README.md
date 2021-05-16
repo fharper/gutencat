@@ -1,6 +1,8 @@
 ![a black cat sitting](img/logo.svg)
 
 # Gutencat
+![Wordpress 5.7.2 tested](https://img.shields.io/badge/wordpress-v5.7.2%20tested-brightgreen) ![Required PHP version](https://img.shields.io/badge/php-%3E%3D7.2-blue) [![Percentage of issues still open](http://isitmaintained.com/badge/open/fharper/gutencat.svg)](http://isitmaintained.com/project/fharper/gutencat "Percentage of issues still open") [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/fharper/gutencat.svg)](http://isitmaintained.com/project/fharper/gutencat "Average time to resolve an issue") [![Maintainability](https://api.codeclimate.com/v1/badges/b272e2922fee9d3d0233/maintainability)](https://codeclimate.com/github/fharper/gutencat/maintainability) [![Dependabot enabled](img/dependabot.svg)](https://github.com/fharper/gutencat/security/advisories)
+
 Who doesn't love cats? It's why I created this WordPress Gutenberg block that displays a random cat image.
 
 Have an amazing catsperience!
