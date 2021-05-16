@@ -67,7 +67,7 @@ Follow the WordPress Coding Standards [installation instructions](https://github
 `npm run test:e2e`
 
 ## What's next
-I have some other things I want to implement.
+First and foremost, fixing the [issues](https://github.com/fharper/gutencat/issues). After that, I have some other things I want to implement.
 - Specify the cat's breed.
 - Specify TheCatAPI's category (i.e.: a cat in a sink).
 - Search the file type.
