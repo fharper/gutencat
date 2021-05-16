@@ -56,6 +56,9 @@ Follow the WordPress Coding Standards [installation instructions](https://github
 
 *There is a "Invalid value for license" error even if `Unlicense` is a valid [SPDX identifier](https://spdx.org/licenses/). There must be a problem with `wp-scripts lint-pkg-json`*
 
+#### Markdown
+`npm run lint:md`
+
 ### Testing
 #### End-to-end (E2E)
 **Please backup your folder before running this command** as for weird unknown reasons I didn't find yet, it sometimes (!!) delete all the non code files (!!!!)...
