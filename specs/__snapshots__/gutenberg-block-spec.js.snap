@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gutencat Gutencat should be available 1`] = `"<!-- wp:dev-fred-gutencat/gutencat /-->"`;
+
+exports[`Wrapper block Gutencat block should be available 1`] = `"<!-- wp:dev-fred-gutencat/gutencat /-->"`;

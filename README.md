@@ -31,10 +31,12 @@ This project has been setup to use the [@wordpress/env](https://developer.wordpr
 You need to set up your environment first by [installing Node.js](https://nodejs.org/en/download/package-manager/). You also need to have [Docker installed](https://docs.docker.com/get-docker/) and running.
 
 ### Running it
-````
-	wp-env start --xdebug
-	npm run start
-````
+`wp-env start --xdebug`
+
+and to ensure your files are up to date on the container.
+
+`npm run start`
+
 You can now open [http://localhost:8888/wp-admin/](http://localhost:8888/wp-admin/). The username is `admin` and the password.... drumrolll... ` password`.
 
 ### Linting
@@ -45,8 +47,14 @@ You can now open [http://localhost:8888/wp-admin/](http://localhost:8888/wp-admi
 `npm run lint:js`
 
 #### PHP
-Follow the WordPress Coding Standards [installation instructions](https://github.com/WordPress/WordPress-Coding-Standards#installation). Once it's done, run the following command
+Follow the WordPress Coding Standards [installation instructions](https://github.com/WordPress/WordPress-Coding-Standards#installation).
 `phpcs gutencat.php`
+
+### Testing
+#### End-to-end (E2E)
+**Please backup your folder before running this command** as for weird unknown reasons I didn't find yet, it sometimes (!!) delete all the non code files (!!!!)...
+
+`npm run test:e2e`
 
 ## What's next
 I have some other things I want to implement.
@@ -54,3 +62,4 @@ I have some other things I want to implement.
 - Specify TheCatAPI's category (i.e.: a cat in a sink).
 - Search the file type.
 - Add a static picture setting: instead of having a random cat picture each time the page containing the block is loaded, the WordPress administrator could check this option when adding a box. It will fetch a random image that will be saved with the block. Obviously, the user will be able to refresh the image until they get what they want.
+- Who knows, maybe even submit it to the [Gutenberg blocks directory](https://github.com/WordPress/wporg-plugin-guidelines/blob/block-guidelines/blocks.md)!
