@@ -21,10 +21,21 @@ Have an amazing catsperience!
 - Once created, you'll receive an email with the API key: add it into the text box and click save.
 
 
-## Contribute
-- Follow the [WordPress Development Environment Setup tutorial](https://developer.wordpress.org/block-editor/handbook/tutorials/devenv/).
 
-*Note that if you want to use XDebug with `wp-env`, you need to start the developer site with `--xdebug` (add `--update` if you already built the image)*
+## Contribute
+We welcome contribution in any capacity. Here are some guidelines to help you. In addition to the steps listed below, you can find more information about how to use `@wordpress/env` in the [WordPress Developer Resources](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/#usage).
+
+### Installation
+This project has been setup to use the [@wordpress/env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) npm package, but feel free to disregard the following steps and use something like [VVV](https://varyingvagrantvagrants.org/) or anything else that you already know.
+
+You need to set up your environment first by [installing Node.js](https://nodejs.org/en/download/package-manager/). You also need to have [Docker installed](https://docs.docker.com/get-docker/) and running.
+
+### Running it
+````
+	wp-env start --xdebug
+	npm run start
+````
+You can now open [http://localhost:8888/wp-admin/](http://localhost:8888/wp-admin/). The username is `admin` and the password.... drumrolll... ` password`.
 
 ### Linting
 #### CSS
@@ -34,7 +45,7 @@ Have an amazing catsperience!
 `npm run lint:js`
 
 #### PHP
-Foolw the WordPress Coding Standards [installation instructions](https://github.com/WordPress/WordPress-Coding-Standards#installation). Once it's done, run the following command
+Follow the WordPress Coding Standards [installation instructions](https://github.com/WordPress/WordPress-Coding-Standards#installation). Once it's done, run the following command
 `phpcs gutencat.php`
 
 ## What's next
