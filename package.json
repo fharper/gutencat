@@ -4,6 +4,19 @@
 	"description": "The block that Gutenberg was missing to really take off",
 	"author": "Frédéric Harper",
 	"license": "Unlicense",
+	"keywords": [
+		"image",
+		"cat",
+		"random"
+	],
+	"homepage": "https://fred.dev",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fharper/gutencat.git"
+	},
+	"bugs": {
+		"url": "https://github.com/fharper/gutencat/issues"
+	},
 	"main": "build/index.js",
 	"watch": {
 		"build": {
@@ -12,17 +25,6 @@
 			],
 			"extensions": "js, scss, svg, png, jpg, jpeg"
 		}
-	},
-	"scripts": {
-		"build": "wp-scripts build",
-		"format": "wp-scripts format",
-		"lint:css": "wp-scripts lint-style",
-		"lint:js": "wp-scripts lint-js",
-		"start": "wp-scripts start --xdebug=debug",
-		"packages-update": "wp-scripts packages-update",
-		"watch": "npm-watch",
-		"test:e2e": "wp-scripts test-e2e --wordpress-base-url=http://localhost:8888 --wordpress-username=admin --wordpress-password=password --puppeteer-devtools",
-		"lint:pkg-json": "wp-scripts lint-pkg-json"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^5.3.3",
@@ -39,5 +41,16 @@
 		"npm-watch": "^0.9.0",
 		"puppeteer": "^9.1.1",
 		"stylelint-config-wordpress": "^17.0.0"
+	},
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start --xdebug=debug",
+		"packages-update": "wp-scripts packages-update",
+		"watch": "npm-watch",
+		"test:e2e": "wp-scripts test-e2e --wordpress-base-url=http://localhost:8888 --wordpress-username=admin --wordpress-password=password --puppeteer-devtools",
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
 	}
 }
