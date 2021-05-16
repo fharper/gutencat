@@ -44,9 +44,11 @@ Keep in mind that not everything is important, and that for this exercise, I foc
 Mostly as a note to myself, here are the steps needed:
 
 1. Either [build from the sources](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/mac_arm64.md) or install the x86-64 version.
-2. Set the environment variable `PUPPETEER_SKIP_CHROMIUM_DOWNLOAD` to `false` and `PUPPETEER_EXECUTABLE_PATH` with the absolute path to Chromium (the executable inside the `.app` package, not the `.app` itself).
+2. Set the environment variable `PUPPETEER_SKIP_CHROMIUM_DOWNLOAD` to `false` and `PUPPETEER_EXECUTABLE_PATH` with the absolute path to Chromium executable (inside the `.app`, not the `.app` itself). It can be found by browsing to `chrome://version/` and checking the value of `Executable Path`.
 3. Before installing `@wordpress/e2e-tests` they should install a newer version of Puppeteer that doesn't have Chromium installation path hardcoded to `/usr/bin/chromium-browser`: I think starting at 9.1.1 but I'm not sure about the exact version with the fix.
 4. Lastly, they need to install `@wordpress/e2e-tests` with the `--force` option (I know, I know...) so it doesn't raise an error when Puppeteer dependencies `1.10.0 < 9` aren't met. As far as my tests went, I saw no issue by upgrading to a newer version of Puppeteer.
+
+Also, Puppeteer can use any other Chromium based browser, which is worth nothing.
 
 ### npm package @wordpress/create-block
 - About the plugin detection issue I had, I understand it's about blocks, but I wouldn't be surprised many create their block as plugins, so it would be nice to make a copy in the build folder of `readme.txt`, `block.json` & `MY_PLUGIN.php`. Unless I misunderstood something, I don't want to have the user generate the zip file or manually select the right files for the plugin.
