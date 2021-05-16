@@ -57,7 +57,7 @@ Also, Puppeteer can use any other Chromium based browser, which is worth nothing
 - It should have some progress bar as for some developers, it may be slow (as mentioned, taking a couple of minutes). There is nothing more annoying than waiting after a process I don't know if it's working or if it just stuck. The user needs visual feedback if it's longer than instantaneous.
 - Not sure if it's this script that isn't up to date or the [Block Plugin Checker](https://wordpress.org/plugins/developers/block-plugin-validator/) but I got a `The block.json:apiVersion property must contain a string value.` warning  when checking my plugin.
 - I had a couple of errors when using `wp-scripts lint-pkg-json` on the `package.json` created with this script.
-- The `wp-scripts lint-pkg-json` give me a "Invalid value for license" error on my license value. Not sure what is happening here as `Unlicense` is a valid [SPDX identifier](https://spdx.org/licenses/).
+- The `wp-scripts lint-pkg-json` give me a "Invalid value for license" error on my license value. Not sure what is happening here as `Unlicense` is a valid [SPDX identifier](https://spdx.org/licenses/). Actually, it may be a bug with [npm-package-json-lint](https://github.com/tclindner/npm-package-json-lint).
 
 ### npm package @wordpress/env
 - Same comment as the `@wordpress/create-block` for the progress bar (i.e.: when it fetches the Docker images).
