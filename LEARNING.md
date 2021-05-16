@@ -39,6 +39,7 @@ Keep in mind that not everything is important, and that for this exercise, I foc
 - The @wordpress/scripts [lint-style section](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/#lint-style) `more examples` link is also 404.
 - Multiple documentation page has no examples on how to use the code. I should have taken notes to make some PRs later.
 - [@wordpress/e2e-tests](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-e2e-tests/) documentation should have something for people running on the M1 MacBook since Puppeteer will give an error about Chromium which doesn't have an arm64 binary available yet. Should also update the Puppeteer version dependencies to something newer because the Chromium path is hardcoded. I'm not sure what the minimum version which fixed this issue, but the latest (9.1.1) works.
+- There are many page where the code examples don't follow WordPress coding style guide: i.e. the code example in [Uninstall Methods - Method 2](https://developer.wordpress.org/plugins/plugin-basics/uninstall-methods/#method-2-uninstall-php).
 
 #### @wordpress/e2e-tests Puppeteer fix for arm64
 Mostly as a note to myself, here are the steps needed:
