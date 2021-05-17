@@ -2,7 +2,7 @@ import {
 	Placeholder,
 	__experimentalNumberControl as NumberControl,
 	SelectControl,
-	PanelBody
+	PanelBody,
 } from '@wordpress/components';
 import React from 'react';
 import {
@@ -15,7 +15,7 @@ import logo from './logo';
 /**
  * The block editing is different in preview or when it's a placeholder
  *
- * @param {Object} props test
+ * @param {Object} props properties of the block
  *
  * @return {WPElement} Element to render
  */
@@ -47,7 +47,7 @@ export default function Edit( props ) {
 							value={ props.attributes.width }
 							onChange={ ( newValue ) =>
 								props.setAttributes( {
-									'width': newValue,
+									width: newValue,
 								} )
 							}
 						/>
@@ -56,7 +56,7 @@ export default function Edit( props ) {
 							value={ props.attributes.height }
 							onChange={ ( newValue ) =>
 								props.setAttributes( {
-									'height': newValue,
+									height: newValue,
 								} )
 							}
 						/>
