@@ -44,7 +44,7 @@ export default function Edit( props ) {
 					<PanelBody title="Dimensions" initialOpen="true">
 						<NumberControl
 							label="Width"
-							value={ props.attributes.width }
+							value={ Number( props.attributes.width ) }
 							onChange={ ( newValue ) =>
 								props.setAttributes( {
 									width: newValue,
@@ -53,7 +53,7 @@ export default function Edit( props ) {
 						/>
 						<NumberControl
 							label="Height"
-							value={ props.attributes.height }
+							value={ Number( props.attributes.height ) }
 							onChange={ ( newValue ) =>
 								props.setAttributes( {
 									height: newValue,

@@ -17,11 +17,11 @@
 			"type": "boolean"
 		},
 		"width": {
-			"type": "number",
+			"type": "string",
 			"default": 100
 		},
 		"height": {
-			"type": "number",
+			"type": "string",
 			"default": 100
 		},
 		"unit": {
