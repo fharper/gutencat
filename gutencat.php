@@ -121,8 +121,10 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'add_menu_link
 
 /**
  * Render the Block
+ *
+ * @param array $attr the Gutenberg block attributes.
  */
-function render_dynamic_block() {
+function render_dynamic_block( $attr ) {
 	global $plugin_options;
 	$image_url = '';
 
@@ -144,7 +146,12 @@ function render_dynamic_block() {
 
 	return sprintf(
 		'<p { ...useBlockProps() }>
-			<img src="' . $image_url . '" alt="random image of a cat" />
+			<img
+				src="' . $image_url . '"
+				width="' . $attr['width'] . $attr['unit'] . '"
+				height="' . $attr['height'] . esc_attr( $attr['unit'] ) . '"
+				alt="random image of a cat"
+			/>
 		</p>'
 	);
 }

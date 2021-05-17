@@ -1,6 +1,14 @@
-import { Placeholder } from '@wordpress/components';
+import {
+	Placeholder,
+	__experimentalNumberControl as NumberControl,
+	SelectControl,
+	PanelBody
+} from '@wordpress/components';
 import React from 'react';
-import { useBlockProps as blockProps } from '@wordpress/block-editor';
+import {
+	useBlockProps as blockProps,
+	InspectorControls,
+} from '@wordpress/block-editor';
 import catImage from './img/cat-example.jpg';
 import logo from './logo';
 
@@ -32,6 +40,41 @@ export default function Edit( props ) {
 						the page or post.
 					</p>
 				</Placeholder>
+				<InspectorControls>
+					<PanelBody title="Dimensions" initialOpen="true">
+						<NumberControl
+							label="Width"
+							value={ props.attributes.width }
+							onChange={ ( newValue ) =>
+								props.setAttributes( {
+									'width': newValue,
+								} )
+							}
+						/>
+						<NumberControl
+							label="Height"
+							value={ props.attributes.height }
+							onChange={ ( newValue ) =>
+								props.setAttributes( {
+									'height': newValue,
+								} )
+							}
+						/>
+						<SelectControl
+							label="Unit"
+							value={ props.attributes.unit }
+							onChange={ ( newValue ) =>
+								props.setAttributes( {
+									unit: newValue,
+								} )
+							}
+							options={ [
+								{ label: 'Pourcentage', value: '%%' },
+								{ label: 'Pixels', value: 'px' },
+							] }
+						/>
+					</PanelBody>
+				</InspectorControls>
 			</div>
 		);
 	}
