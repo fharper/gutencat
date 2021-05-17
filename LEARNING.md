@@ -25,7 +25,7 @@ There are a lot more I could do, but I assumed that at this point, it's enough f
 ## Feedback
 One of the things I like when I start using a new product or technology is to take notes and give feedback. It is one of the reasons I like having a developer advocate role around something I don't know. I'll have the same experience as our users with no bias or assumptions. I also believe that small changes can have a big impact on the users’ experience, and therefore, their happiness! In other words, I may love too much the [Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle)...
 
-Keep in mind that not everything is important, and that for this exercise, I focused on the things that could be improved, from **my** point of view: also, those may already exist or fixed and I just missed them. I will create the proper issues, if they don't exist already, or create a PR for those at a later time.
+Keep in mind that it is done with utter respesct for the employee and contributors: theey all did an amazing job! So not everything is important, and for this exercise, I focused on the things that could be improved, from **my** point of view: also, those may already exist or fixed and I just missed them. I will create the proper issues, if they don't exist already, or create a PR for those at a later time.
 
 ### Generic
 - Could be nice to have the [Block Plugin Checker](https://wordpress.org/plugins/developers/block-plugin-validator/) as part of the `npm run-script` in addition to the web version.
