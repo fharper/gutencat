@@ -57,7 +57,7 @@ You can now open [http://localhost:8888/wp-admin/](http://localhost:8888/wp-admi
 #### PHP
 
 Follow the WordPress Coding Standards [installation instructions](https://github.com/WordPress/WordPress-Coding-Standards#installation).
-`phpcs gutencat.php`
+`phpcs --standard=WordPress-Extra gutencat.php`
 
 ##### Package.json
 
