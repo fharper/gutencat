@@ -35,6 +35,7 @@ Keep in mind that it is done with utter respesct for the employee and contributo
 - Could be nice to have the [Block Plugin Checker](https://wordpress.org/plugins/developers/block-plugin-validator/) as part of the `npm run-script` in addition to the web version.
 - I can't believe Dashicon didn't have a cat one! I know, this won't be used in the future, but I had to say it.
 - I'm thinking of writing an article on how to debug Gutenberg blocks with [Visual Studio Code](https://code.visualstudio.com) while using `wp-env`. The wrapping of multiple things inside means that you have to do 2-3 things differently. Nothing super complicated but it's the kind of blog post that is usually welcome by people not savvy with this tech stack.
+- I assumed there is someone or multiple person helping and supporting the contributor. It might be nice to have a chat with [Juliette](https://github.com/jrfnl). I understand where she came from, and how it is frustrating, but from my point of view, she could have handled [this](https://github.com/WordPress/WordPress-Coding-Standards/issues/1967#issuecomment-809393290) a bit better.Again, not debating the reasons, and I sure know it's not easy to navigate open source with the community and all that comes with it. Weirdly enough, I love deescalating those kinds of situations and be sure that both parties are satisfied. In the end, it's the health and safeness of the community that is always on the line. My two cents.
 
 ### Documentation
 
