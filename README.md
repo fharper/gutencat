@@ -59,6 +59,8 @@ You can now open [http://localhost:8888/wp-admin/](http://localhost:8888/wp-admi
 Follow the WordPress Coding Standards [installation instructions](https://github.com/WordPress/WordPress-Coding-Standards#installation).
 `phpcs --standard=WordPress-Extra gutencat.php`
 
+\* *if you run PHP 8.0 you may get an `Uncaught TypeError: vsprintf()` error. Wordpress Coding Standards Sniffer [doesn't support it yet](https://github.com/WordPress/WordPress-Coding-Standards/issues/1967).*
+
 ##### Package.json
 
 `npm run lint:pkg-json`
