@@ -44,6 +44,9 @@ and to ensure your files are up to date on the container.
 
 You can now open [http://localhost:8888/wp-admin/](http://localhost:8888/wp-admin/). The username is `admin` and the password.... drumrolll... `password`.
 
+#### Important
+If you use `wp-env` from the project folder, don't use the `delete` option in the plugins page as it **will delete** most files from the folder.
+
 ### Linting
 
 #### JavaScript / React
@@ -74,8 +77,6 @@ Follow the WordPress Coding Standards [installation instructions](https://github
 ### Testing
 
 #### End-to-end (E2E)
-
-**Please backup your folder before running this command** as for weird unknown reasons I didn't find yet, it sometimes (!!) delete all the non code files (!!!!)...
 
 `npm run test:e2e`
 
