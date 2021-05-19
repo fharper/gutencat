@@ -25,7 +25,7 @@ const plugin = archiver( 'zip', {
 console.info( chalk.green( '>>> Starting compressing the files' ) );
 plugin.pipe( output );
 plugin.directory( 'build/', 'build' );
-plugin.glob( '*.php', { cwd: __dirname } );
+plugin.glob( '*.php' );
 plugin.file( 'block.json' );
 plugin.file( 'readme.txt' );
 
