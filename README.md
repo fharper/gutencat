@@ -36,7 +36,10 @@ You need to set up your environment first by [installing Node.js](https://nodejs
 
 ### Running it
 
-`wp-env start --xdebug`
+```
+npm install
+wp-env start --xdebug
+```
 
 and to ensure your files are up to date on the container.
 
