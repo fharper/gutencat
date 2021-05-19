@@ -32,3 +32,6 @@ node_modules/
 
 # Visual Studio Code configurations
 .vscode/
+
+# Specific to Gutencat
+gutentag.zip
