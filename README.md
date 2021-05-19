@@ -47,6 +47,12 @@ You can now open [http://localhost:8888/wp-admin/](http://localhost:8888/wp-admi
 #### Important
 If you use `wp-env` from the project folder, don't use the `delete` option in the plugins page as it **will delete** most files from the folder.
 
+### Packaging
+
+If you want to install the plugin manually, you can create the `.zip` file using
+
+`npm run package`
+
 ### Linting
 
 #### JavaScript / React

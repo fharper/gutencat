@@ -38,9 +38,12 @@
 		"@wordpress/env": "^4.0.4",
 		"@wordpress/eslint-plugin": "^9.0.5",
 		"@wordpress/scripts": "^15.0.1",
+		"archiver": "^5.3.0",
+		"chalk": "^2.4.2",
 		"eslint-formatter-pretty": "^4.0.0",
 		"markdownlint-cli2-formatter-pretty": "^0.0.2",
 		"npm-watch": "^0.9.0",
+		"path": "^0.12.7",
 		"puppeteer": "^9.1.1",
 		"stylelint-config-wordpress": "^17.0.0"
 	},
@@ -55,6 +58,7 @@
 		"test:e2e": "wp-scripts test-e2e --wordpress-base-url=http://localhost:8888 --wordpress-username=admin --wordpress-password=password --puppeteer-devtools",
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"lint:md": "markdownlint-cli2 *.md",
-		"lint:php": "phpcs --standard=WordPress-Extra"
+		"lint:php": "phpcs --standard=WordPress-Extra",
+		"package": "node scripts/package-plugin.js"
 	}
 }
